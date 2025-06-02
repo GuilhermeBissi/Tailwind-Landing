@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styles */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Button styles */
+.btn-primary {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #3b82f6;
+    border-radius: 0.375rem;
+    color: #3b82f6;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styles */
+.hero-section {
+    margin-top: -4rem;
+}
+
+.carousel-caption {
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 2.5rem 0;
+    }
+}
+
+
+.destination-card, .service-item {
+    transition: all 0.3s ease;
+}
+
+
+.popover {
+    position: absolute;
+    z-index: 50;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
